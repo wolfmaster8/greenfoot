@@ -20,11 +20,16 @@ public class MyWorld extends greenfoot.World
         super(800, 600, 1, false);
         
         showText("Usa las flechas para mover al Oso", 200, 20);
-        showText("Presiona la barra espaciadora para disparar y descubrir las palabras", 300, 40);
+        showText("Presiona la barra espaciadora para disparar y descubrir las palabras", 400, 40);
         addObject(new Oso(), 30, 200);
         addObject(new Apple(), randomX(), randomY());
         addObject(new Aviao(), randomX(), randomY());
         addObject(new SuperO(), randomX(), randomY());
+        addObject(new Laranja(), randomX(), randomY());
+        addObject(new Papas(), randomX(), randomY());
+        addObject(new Fresa(), randomX(), randomY());
+        addObject(new Abeja(), randomX(), randomY());
+        addObject(new Mujer(), randomX(), randomY());
     }
     public int randomX(){
         int random= ThreadLocalRandom.current().nextInt(60, 798 + 1);

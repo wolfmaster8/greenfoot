@@ -43,7 +43,7 @@ public class Oso extends Actor
     public void select(){
      World w= getWorld();   
      
-     if(Greenfoot.isKeyD("space")){
+     if(Greenfoot.isKeyDown("space")){
          w.addObject(new Pao(), getX(), getY());
         }
     }
